@@ -4,6 +4,6 @@ console.log(myVersion);
 */
 
 document.getElementById("myButton").onclick = function(){
-    var myAge = document.getElementById("myAge").value;
+    var myAge = document.getElementById("number").value;
     console.log("Age " + myAge)
 };
