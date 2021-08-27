@@ -1,0 +1,93 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+section {
+  padding: 40px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: tomato;
+}
+
+.square {
+  padding: 20px;
+  width: 350px;
+  height: 350px;
+  background-color: tomato;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #ddd;
+}
+
+.btn:disabled {
+  cursor: no-drop;
+  color: #bbb;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  background-color: #ccc;
+}
+
+.btn-danger {
+  border-color: #ec583d;
+  background-color: tomato;
+  color: #fff;
+}
+
+.btn-danger:active {
+  background-color: #ec583d;
+}
+
+.hide {
+  display: none;
+}
+
+.text-center {
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  margin: 10px;
+}
+
+table thead th {
+  text-align: left;
+}
+
+table thead th,
+table tbody td {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+}
+
+tr.comprado td {
+  text-decoration: line-through;
+}
