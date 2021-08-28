@@ -9,16 +9,28 @@
 </head>
 <body>
     
-    <h1> CONVERSOR </h1>
+    <h1> Lista de compras </h1>
 
 
 
 
         <form id="formulario">
-            <input type="number" id="quantity" value =0>
-            <input type="number" id="quantity" value =0> 
-            <input type="number" id="quantity" value =0> 
-            <input type="number" id="quantity" value =0> 
+            <label for = "quantity">Quantidade</label>
+            <label for = "payment">Unidade de Medida</label>
+            <label for = "descricao">Descricao</label><br>
+
+            <input type="number" id="quantity" min="0" max="99" value = "0">
+         
+            
+            <select id="payment">
+                <option value = "kg">KG - Kilograma</option>
+                <option value = "u">U - Unidade</option>
+                <option value = "l">L - Litro</option>
+            </select>
+
+            <input id="descricao">
+
+            <br>
             <button class ="btn" id="myButton"> Converta </button>&nbsp
 
         </form>
