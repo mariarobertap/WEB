@@ -10,7 +10,7 @@ class Lista {
     }
 }
 var lists = []
- // set this to your table
+var resutaldo = document.getElementById('demo');
 
 document.getElementById("myButton").onclick = function(e){
 
@@ -27,26 +27,20 @@ document.getElementById("myButton").onclick = function(e){
         let Mylist = new Lista(descricao,qauntity, un);
         lists.push(Mylist)
         console.table(lists);
-
-       
-        var inferno = document.getElementById('resultado')
-        var porra  = display();
-
-        porra.outerHTML
-        inferno.innerHTML = porra
+        console.log(lists.length)
+        display()
     }
+
+
 }
 
 function display() {
-    var table = document.createElement("table");
-    for (var i=0; i<lists.length; i++) {
-        var row = table.insertRow();
-        for (var j=0; j<lists[i].length; j++) {
-            var cell = row.insertCell();
-            cell.appendChild(document.createTextNode(lists[i][j]));
-        }
+    demo.innerHTML = " "
+    for(var i = 0; i < lists.length; i++){
+        //console.log(lists[i]);
+      
+        demo.innerHTML += " <br> <input type = 'checkbox' id = '"+ i+"'>" + Object.values(lists[i]).join(" ");
     }
-    table = String(table)
-    console.log(table)
-    return table;
+     //lists.forEach(lists => demo.innerHTML += " <br> <input type = 'checkbox'>" + Object.values(lists).join(" "));
+
 }
