@@ -9,39 +9,61 @@
 </head>
 <body>
     
-    <h1> Lista de compras </h1>
 
+    <div class="Testando">
+        <h1 class ="myTittle"> Lista de compras </h1>
+        <div class ="myForm">
+            <form id="formulario">
+                     <p>      
+                    <label class="w3-text-brown"><b>Descrição
+                    </b></label>
+                    <input id="descricao" class="w3-input w3-border w3-sand" name="first" type="text"></p>
+                    <p>
 
-
-
-        <form id="formulario">
-            <label for = "descricao">Descricao</label>
-            <label for = "quantity">Quantidade</label>
-            <label for = "payment">Unidade de Medida</label><br>
-          
-            <input id="descricao" value = " ">
-
-            <input type="number" id="quantity" min="0" max="99" value = "0">
-         
-            
-            <select id="UN">
-                <option value = "kg">KG - Kilograma</option>
-                <option value = "u">U - Unidade</option>
-                <option value = "l">L - Litro</option>
-            </select>
-
+                        <p>      
+                            <label class="w3-text-brown"><b>Quantidade
+                            </b></label>
+                            <input type="number" id="quantity" class="w3-input w3-border w3-sand" name="first" type="text"></p>
+                            <p>
+             
+                <label for = "quantity">Quantidade</label>
+                <label for = "payment">Unidade de Medida</label><br>
+              
+               
+    
+             
+                
+                <select id="UN" class="w3-input w3-border w3-sand">
+                    <option value = "KG">KG - Kilograma</option>
+                    <option value = "Unidade(s)">U - Unidade</option>
+                    <option value = "Litro(s)">L - Litro</option>
+                </select>
+    
            
+    
+                <br>
+                
+                <button class="button" id="myButton" style="vertical-align:middle"><span>Adicionar a lista </span></button>
 
-            <br>
-            <button class ="btn" id="myButton"> Click me </button>&nbsp
+            </form>
 
-        </form>
+
+            <p id="demo"></p>
+
+
+
+        </div>
+      
 
         <table id = "table"></table>
         <br>
         <pre id="arrPrint"></pre>
-        <p id="demo"></p>
+        
        
+
+
+    </div>
+    
 
         <script src="script.js"></script>
 

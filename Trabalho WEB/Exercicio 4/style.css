@@ -3,3 +3,92 @@
   font-size: 18px;
   font-family: monospace;
 }
+
+.Testando {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #ccf8ff;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #ccf8ff;
+}
+
+.myTittle {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.myForm {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #c4f5ee;
+  border-radius: 15px;
+}
+
+body {
+  background-color: #c4c7f5;
+}
+
+p {
+  text-align: left;
+  vertical-align: middle;
+  background-color: #c4f5ee;
+  border-radius: 15px;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4c4f5;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  padding: 13px;
+  width: 200px;
+
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.w3-input {
+  padding: 8px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 50%;
+}
+.w3-text-brown {
+  color: black;
+  text-align: left;
+}
+
+.w3-sand,
+.w3-hover-sand:hover {
+  color: #000;
+  background-color: #fdf5e6;
+}

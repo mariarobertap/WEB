@@ -38,8 +38,8 @@ function display() {
     demo.innerHTML = " "
     for(var i = 0; i < lists.length; i++){
         //console.log(lists[i]);
-      
-        demo.innerHTML += " <br> <input type = 'checkbox' id = '"+ i+"'>" + Object.values(lists[i]).join(" ");
+        
+        demo.innerHTML += " <br> <input type = 'checkbox' id = 'list"+ i+"'>" +lists[i].descricao +"  "+ lists[i].quantidade +"  "+lists[i].unidadeMedida;
     }
      //lists.forEach(lists => demo.innerHTML += " <br> <input type = 'checkbox'>" + Object.values(lists).join(" "));
 
