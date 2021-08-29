@@ -1,5 +1,54 @@
+body {
+  background-image: url("backgroungImageCalculator.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .btn {
-  background-color: aqua;
-  font-size: 18px;
-  font-family: monospace;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #52d0db;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #22575c;
+}
+
+.bt:hover {
+  background-color: #52d0db;
+}
+
+.btn:active {
+  background-color: #52d0db;
+  box-shadow: #22575c;
+  transform: translateY(4px);
+}
+
+.teste {
+  margin: auto;
+  width: 80%;
+
+  border: 3px solid #f9ccff;
+  border-radius: 15px;
+  padding: 70px;
+
+  background-color: #f6ccff;
+}
+.centralizar {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #ccf8ff;
+  padding: 70px;
+  border-radius: 15px;
+  background-color: #ccf8ff;
+}
+
+h1 {
+  text-align: center;
 }

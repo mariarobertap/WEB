@@ -9,38 +9,28 @@
 </head>
 <body>
     
-    <h1> CALCULADORA</h1>
-    <!--
-    <label for = "quantity"></label>
-        <input type="number" id= "quantity" name= "quantity" min = "0"  value="0">
+        <div class ="centralizar">
+            <div class= "teste">
+                <h1> CALCULADORA</h1>
 
-        <label for = "quantity"></label>
-        <input type="number" id= "quantity2" name= "quantity2" min = "0"  value="0">    
+                <form id="formulario">
+                    <input type="number" id="quantity" value =0> 
+                    <input type="number" id="quantity2" value =0> 
+                    <br><button class ="btn" id="dividir" onclick="somar(event, '+')"> + </button>&nbsp
+                    <button class ="btn" id="dividir" onclick="somar(event, '-')"> - </button>&nbsp
+                    <button class ="btn" id="dividir" onclick="somar(event, '/')"> / </button>&nbsp
+                    <button class ="btn" id="dividir" onclick="somar(event, '*')"> * </button>&nbsp
+        
+                </form>
+                <br>
+                <div id="resultado">
+        
+                </div>
 
-        <div> 
-            <button class ="btn" id="mais" onclick="hideSquares()"> + </button>&nbsp
-            <button class ="btn" id="menos" onclick="hideSquares()"> - </button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <button class ="btn" id="multiplicação" onclick="hideSquares()"> * </button>&nbsp
-            <button class ="btn" id="dividir" onclick="hideSquares()"> / </button>&nbsp
-        </div>
-    -->
-
-
-
-        <form id="formulario">
-            <input type="number" id="quantity" value =0> 
-            <input type="number" id="quantity2" value =0> 
-            <br><button class ="btn" id="dividir" onclick="somar(event, '+')"> + </button>&nbsp
-            <button class ="btn" id="dividir" onclick="somar(event, '-')"> - </button>&nbsp
-            <button class ="btn" id="dividir" onclick="somar(event, '/')"> / </button>&nbsp
-            <button class ="btn" id="dividir" onclick="somar(event, '*')"> * </button>&nbsp
-
-        </form>
-        <br>
-        <div id="resultado">
+            </div>
 
         </div>
-       
+ 
 
         <script src="script.js"></script>
 
