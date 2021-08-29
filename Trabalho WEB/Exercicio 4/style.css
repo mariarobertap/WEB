@@ -75,20 +75,20 @@ p {
   opacity: 1;
   right: 0;
 }
-.w3-input {
+.myinput {
   padding: 8px;
   display: block;
   border: none;
   border-bottom: 1px solid #ccc;
   width: 50%;
 }
-.w3-text-brown {
+.titulo {
   color: black;
   text-align: left;
 }
 
-.w3-sand,
-.w3-hover-sand:hover {
+.mysand,
+.my-hover-sand:hover {
   color: #000;
   background-color: #fdf5e6;
 }

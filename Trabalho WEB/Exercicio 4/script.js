@@ -17,7 +17,6 @@ document.getElementById("myButton").onclick = function(e){
     var descricao = document.getElementById('descricao').value;
     var qauntity = document.getElementById('quantity').value;
     var un = document.getElementById('unidade').value;
-   var orderArray = 1;
     e.preventDefault();
 
     console.log(descricao)
