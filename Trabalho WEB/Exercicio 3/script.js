@@ -5,5 +5,5 @@ document.getElementById("myButton").onclick = function(e){
     var f = document.getElementById("quantity").value;
     var result = (f - 32) * (5/9);
 
-    tela.innerHTML = result;
+    tela.innerHTML = "Celcius: " + result;
 }

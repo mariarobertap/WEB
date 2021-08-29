@@ -1,5 +1,39 @@
+body {
+  background-image: linear-gradient(to right, red, #45e4f5);
+  background-image: url("winter.jpg");
+}
+
 .btn {
   background-color: aqua;
   font-size: 18px;
   font-family: monospace;
+}
+
+.maintela {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #ccf8ff;
+  padding: 70px;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, red, #45e4f5);
+}
+
+h1 {
+  text-align: center;
+}
+
+.form {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #ccf8ff;
+  padding: 70px;
+  border-radius: 15px;
+}
+.result {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #ccf8ff;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #a2e1b8;
 }
