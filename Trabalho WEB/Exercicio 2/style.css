@@ -30,14 +30,13 @@ body {
   transform: translateY(4px);
 }
 
-.teste {
+.telamain {
   margin: auto;
-  width: 80%;
-
-  border: 3px solid #f9ccff;
-  border-radius: 15px;
+  width: 50%;
+  border: 3px solid #ccf8ff;
   padding: 70px;
-
+  border-radius: 15px;
+  background-color: #ccf8ff;
   background-color: #f6ccff;
 }
 .centralizar {
@@ -51,4 +50,16 @@ body {
 
 h1 {
   text-align: center;
+}
+.resultado {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #ccf8ff;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #a2e1b8;
+}
+
+.myButtons {
+  margin-left: 15%;
 }

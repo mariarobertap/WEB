@@ -10,25 +10,25 @@
 <body>
     
         <div class ="centralizar">
-            <div class= "teste">
+            <div class= "telamain">
                 <h1> CALCULADORA</h1>
 
                 <form id="formulario">
                     <input type="number" id="quantity" value =0> 
                     <input type="number" id="quantity2" value =0> 
-                    <br><button class ="btn" id="dividir" onclick="somar(event, '+')"> + </button>&nbsp
-                    <button class ="btn" id="dividir" onclick="somar(event, '-')"> - </button>&nbsp
-                    <button class ="btn" id="dividir" onclick="somar(event, '/')"> / </button>&nbsp
-                    <button class ="btn" id="dividir" onclick="somar(event, '*')"> * </button>&nbsp
+                    <div class="myButtons">
+                        <br><button class ="btn" id="mais" onclick="somar(event, '+')"> + </button>&nbsp
+                        <button class ="btn" id="menos" onclick="somar(event, '-')"> - </button>&nbsp
+                        <button class ="btn" id="dividir" onclick="somar(event, '/')"> / </button>&nbsp
+                        <button class ="btn" id="multiplicar" onclick="somar(event, '*')"> * </button>&nbsp
+                    </div>
+                    
         
                 </form>
                 <br>
-                <div id="resultado">
-        
+                <div class="resultado" id="resultado">
                 </div>
-
             </div>
-
         </div>
  
 
