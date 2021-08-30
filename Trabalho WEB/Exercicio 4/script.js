@@ -19,15 +19,13 @@ document.getElementById("myButton").onclick = function(e){
     var un = document.getElementById('unidade').value;
     e.preventDefault();
 
-    console.log(descricao)
     descricao = String(descricao)
 
     if(descricao != " " && qauntity != 0){
         let Mylist = new Lista(descricao,qauntity, un);
-        lists.push(Mylist)
+        lists.push(Mylist);
         console.table(lists);
-        console.log(lists.length)
-        display()
+        display();
     }
 
 
@@ -35,11 +33,11 @@ document.getElementById("myButton").onclick = function(e){
 
 function display() {
     demo.innerHTML = " "
-    for(var i = 0; i < lists.length; i++){
-        //console.log(lists[i]);
-        
-        demo.innerHTML += " <br> <input type = 'checkbox' id = 'list"+ i+"'>" +lists[i].descricao +"  "+ lists[i].quantidade +"  "+lists[i].unidadeMedida;
+    for(var i = 0; i < lists.length; i++){  
+        demo.innerHTML += " <br> <input type = 'checkbox' id = 'list"+ i+"' >" +lists[i].descricao +"  "+ lists[i].quantidade +"  "+lists[i].unidadeMedida;
     }
-     //lists.forEach(lists => demo.innerHTML += " <br> <input type = 'checkbox'>" + Object.values(lists).join(" "));
 
 }
+
+
+
