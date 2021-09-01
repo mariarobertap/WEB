@@ -1,0 +1,32 @@
+[
+  {
+    "numero": 1,
+    "enunciado": "Tem serviço de delivery?",
+    "alternativas": [
+      {
+        "titulo": "Atende"
+      },
+      {
+        "titulo": "Não atende"
+      },
+      {
+        "titulo": "Não se aplica"
+      }
+    ]
+  },
+  {
+    "numero": 2,
+    "enunciado": "Ambiente limpo?",
+    "alternativas": [
+      {
+        "titulo": "Atende"
+      },
+      {
+        "titulo": "Não atende"
+      },
+      {
+        "titulo": "Não se aplica"
+      }
+    ]
+  }
+]

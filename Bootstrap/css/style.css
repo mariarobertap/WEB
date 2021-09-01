@@ -1,0 +1,15 @@
+.banner {
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 50vh;
+  }
+}
+
+@media print {
+  .banner {
+    display: none;
+  }
+}
