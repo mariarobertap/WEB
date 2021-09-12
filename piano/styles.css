@@ -1,0 +1,58 @@
+body {
+  background-image: linear-gradient(pink, cyan);
+  height: 100%;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.border {
+  border: 20px solid pink;
+}
+
+p {
+  user-select: none;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 350%;
+}
+
+#textWhite {
+  color: aliceblue;
+}
+#textBlack {
+  color: black;
+}
+
+.piano {
+  display: flex;
+}
+
+.key {
+  height: calc(var(--width) * 4);
+  width: var(--width);
+}
+
+.white {
+  --width: 100px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.white.active {
+  background-color: #ccc;
+}
+
+.black {
+  --width: 70px;
+  background-color: black;
+  margin-left: calc(var(--width) / -2);
+  margin-right: calc(var(--width) / -2);
+  z-index: 2;
+}
+
+.black.active {
+  background-color: #333;
+}
