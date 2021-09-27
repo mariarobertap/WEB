@@ -1,0 +1,40 @@
+https://www.trademore.com/sell/smart-phone
+
+	Pontos positivos:
+		-Funcionalidade de vender ou comprar o celular desejado
+		-Interface
+
+	Pontos negativos:
+		-Vendas e compras feitas na plataforma
+		-Não há trade entre usuarios explicitamente
+		-Escolhas pré definidas
+		-Valor pré definida.
+		-Cambio
+		-Imagens pré definidas pela plataforma.
+		-Revenda, não trade
+
+
+https://www.trocafone.com
+
+
+	Pontos positivos:
+		-Cambio
+		-Funcionalidade de vender ou comprar o celular desejado
+
+
+	Pontos negativos:
+		-Vendas e compras feitas na plataforma
+		-Não há trade entre usuarios explicitamente
+		-Escolhas pré definidas
+		-Valor pré definida pela plataforma.
+		-Imagens pré definidas pela plataforma.
+		-Interface para vender o aparelho para plataforma
+		-Revenda, não trade
+
+
+
+Tecnologia
+
+	-Banco: PostgreSQL
+	-Back-end: Ruby on rails
+	-Front-end: React TS e JS
