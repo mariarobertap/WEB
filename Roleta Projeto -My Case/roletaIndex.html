@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>My case</title>
+    <link rel="stylesheet" media="all" href="roletaStyle.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="sombraRoleta">
+        <div id="roleta"></div>
+        <div id="laufband_zeiger"></div>
+    </div>
+
+    <div id="inv_flexContainer"></div>
+
+    <div id="inv_itemDetails" onclick="openItemDetails()">
+        <b>Farben:</b><br>
+        <div id="color0"></div>
+        <div id="color1"></div>
+        <div id="color2"></div>
+        <div id="color3"></div>
+        <div id="color4"></div>
+        <div id="color5"></div>
+        <div id="color6"></div>
+        <div id="color7"></div>
+        <div id="color8"></div>
+        <div id="color9"></div>
+        <div id="color10"></div>
+        <div id="color11"></div>
+        <div id="color12"></div>
+        <div id="color13"></div>
+        <div id="color14"></div>
+        <br>
+        <div id="certified"></div>
+    </div>
+
+    <div id="mycaseSimulator">
+        <div class="mybuttons">
+            <div id ="button" class="button" onclick="
+                roll(new Caixa(1, 'CaixaExemplo',
+                 [new Item1(0, false, 'AK-47', 'case.png'),
+                  new Item2(0, false, 'Knife', 'gunFire.png'),
+                  new Item3(0, false, 'Knife', 'gunFire.png'),
+                  new Item4(0, false, 'Glove', 'knifeBlue.png'),
+                  new Item5(0, false, 'Glove', 'knifeBlue.png')]))">
+                Abrir 
+            </div>
+            <div id ="button" class="button2" >
+                Voltar  
+            </div>
+            <div id ="button" class="button3" >
+                Inventario
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="roletaJS.js"></script>
+</body>
+</html>
