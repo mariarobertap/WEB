@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, serif;
+  background-color: rgb(40, 40, 43);
+}
+
+#Mycrate {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  height: 500px;
+  position: relative;
+
+  background-color: rgb(19, 19, 20);
+}
+
+.center {
+  position: absolute;
+  margin-left: -50px;
+  left: 48%;
+
+  bottom: 40px;
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#parent {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.item {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  background-color: rgb(24, 24, 27);
+}
+#item1 {
+  border-left: 10px solid rgb(172, 197, 29);
+}
+#item2 {
+  border-left: 10px solid rgb(172, 197, 29);
+}
+#item3 {
+  border-left: 10px solid rgb(226, 24, 34);
+}
+#item4 {
+  border-left: 10px solid rgb(226, 23, 33);
+}
+#item5 {
+  border-left: 10px solid rgb(224, 21, 214);
+}
+
+#item1:hover {
+  background-color: rgb(172, 197, 29);
+}
+#item2:hover {
+  background-color: rgb(172, 197, 29);
+}
+#item3:hover {
+  background-color: rgb(226, 23, 33);
+}
+#item4:hover {
+  background-color: rgb(226, 23, 33);
+}
+#item5:hover {
+  background-color: rgb(224, 21, 214);
+}

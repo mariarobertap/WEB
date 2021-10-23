@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>My case</title>
+    <link rel="stylesheet" media="all" href="roletaStyle.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="sombraRoleta">
+        <div id="roleta"></div>
+        <div id="laufband_zeiger"></div>
+    </div>
+
+    <div id="inv_flexContainer"></div>
+
+    <div id="inv_itemDetails" onclick="openItemDetails()">
+        <b>Farben:</b><br>
+        <div id="color0"></div>
+        <div id="color1"></div>
+        <div id="color2"></div>
+        <div id="color3"></div>
+        <div id="color4"></div>
+        <div id="color5"></div>
+        <div id="color6"></div>
+        <div id="color7"></div>
+        <div id="color8"></div>
+        <div id="color9"></div>
+        <div id="color10"></div>
+        <div id="color11"></div>
+        <div id="color12"></div>
+        <div id="color13"></div>
+        <div id="color14"></div>
+        <br>
+        <div id="certified"></div>
+    </div>
+
+    <div id="mycaseSimulator">
+        <div class="mybuttons">
+            <div id ="button" class="button" onclick="
+                roll(new Caixa(1, 'CaixaExemplo',
+                 [new Item1('rgb(224, 21, 214)', false, 'AK-47', 'https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO1gb-Gw_alDLPIhm5D18d0i_rVyoD8j1yglB89IT6mOoWUegM-aFvX_Fe_yO3q1Ja6vsnMn3Q163YntH6Lnxfh1UpFbrdng_SACQLJQIlmyYc/150fx122f'),
+                  new Item2('rgb(226, 23, 33)', false, 'Knife', 'https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoor-mcjhnwMzcdD4b09izl4mGluP7IYTdn2xZ_Pp9i_vG8MKk2Qbn_UJqYG_1I9OUJlI6ZwvTrlm4yLrngZLpv5XNmHBgvyQm4H7egVXp1lh8h_GV/150fx122f'),
+                  new Item3('rgb(226, 23, 33)', false, 'Knife', 'https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposr-kLAtl7PTbTjlH7du6kb-KkPDmNqjCmXlu5Mx2gv3--Y3nj1H6_kI6NTv7I9CVcVdrYQzTqVW4xrrrgZe-6p6ay3ZluiYl4nvVyhO21QYMMLLk7OGppA/150fx122f'),
+                  new Item4('rgb(172, 197, 29)', false, 'Glove', 'https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpovbSsLQJf1ObcTj5X09ujgL-HmOXxDLfYkWNF18lwmO7Eu9n2jgG1_ERlZGH1I4PHJgVqY1_Wq1m4we_o0JDovcuamCE3vXJ05X_D30vgSo6bU-Y/150fx122f'),
+                  new Item5('rgb(172, 197, 29)', false, 'Glove', 'https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpovbSsLQJf0PLGeC597d2JkoGPksj4OrzZglRd6dd2j6eYp9Si3ley-EE4NmD3ctTBegJsaA2D-1foxe7q1MDtupXMwSdlu3In-z-DyHch2Jqo/150fx122f')]))">
+                Abrir 
+            </div>
+            <div onclick="window.location='index.html';" id ="button" class="button2" >
+                Voltar  
+            </div>
+            <div id ="button" class="button3" >
+                Inventario
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="roletaJS.js"></script>
+</body>
+</html>
