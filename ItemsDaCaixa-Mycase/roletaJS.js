@@ -62,6 +62,9 @@ var roletaOpen = false;
 var rollingBlocked = false;
 var itemDetailsOpen = false;
 
+
+
+
 function roll(caixa) {
     console.log(rollingBlocked)
     if (rollingBlocked === false) {
@@ -72,17 +75,17 @@ function roll(caixa) {
         var roleta = document.getElementById("roleta");
         roleta.style.top = "-14000px";
         Mudarestado("mycaseSimulator")
-        //Animation
-        random = Math.floor((Math.random() * 500) + 10000);    //10000-12000
+
+        random = Math.floor((Math.random() * 2000) + 10000);       //10000-12000
 
         var roletaKeyframes = "@-webkit-keyframes roll_ani {0% {top: -14000px} 100% {top: " + (-14000 + random) + "px}}";
 
-        //Animation 
+
         var roletaKeyframesTextNode = document.createTextNode(roletaKeyframes);
         document.getElementsByTagName("style")[0].appendChild(roletaKeyframesTextNode);
 
         roleta.style.webkitAnimationName = "roll_ani";
-        roleta.style.webkitAnimationDuration = "4s";
+        roleta.style.webkitAnimationDuration = "5s";
         roleta.addEventListener("webkitAnimationEnd", rodarRoleta);
     }
 }
@@ -113,7 +116,7 @@ function rodarRoleta() {
         biggerDivElem.parentNode.removeChild(biggerDivElem);
     });
     //biggerDivElem.innerHTML = itensRoleta[whichItem].item.name + "<br>";
-
+    window.location = 'index.html'
     Mudarestado("mycaseSimulator")
 
 
@@ -174,44 +177,24 @@ function preencherRoleta(caixa) {
         document.getElementById("roleta").appendChild(divElem);
         document.getElementById("blockNr" + i).style.top = 200 * i + "px";
 
-        randomTier = Math.floor((Math.random() * 100) + 1);   //1-100
+        randomTier = Math.floor((Math.random() * 100) + 1);
         if (randomTier <= 55) {
 
-
-
             itemAleatorio = ListaItensTier0[randomItem(ListaItensTier0)];
-
-
             myimage = "url('" + itemAleatorio.image + "')";
-
             showItemRoleta(myimage, itemAleatorio.colour, i);
-
-
-
-            itemAleatorio.zertifiziert = certifyItem();
-
             itensRoleta.push(itemAleatorio);
         }
         else if (randomTier <= 83 && randomTier > 55) {
 
-
             itemAleatorio = ListaItensTier1[randomItem(ListaItensTier1)];
-
-            itemAleatorio.zertifiziert = certifyItem();
-
             myimage = "url('" + itemAleatorio.image + "')";
-
             showItemRoleta(myimage, itemAleatorio.colour, i);
             itensRoleta.push(itemAleatorio);
         }
         else if (randomTier <= 95 && randomTier > 83) {
 
-
-
-
             itemAleatorio = ListaItensTier2[randomItem(ListaItensTier2)];
-
-            itemAleatorio.zertifiziert = certifyItem();
             myimage = "url('" + itemAleatorio.image + "')";
             console.log(itemAleatorio.image)
             showItemRoleta(myimage, itemAleatorio.colour, i);
@@ -219,29 +202,16 @@ function preencherRoleta(caixa) {
         }
         else if (randomTier <= 99 && randomTier > 95) {
 
-
-
-
-
             itemAleatorio = ListaItensTier3[randomItem(ListaItensTier3)];
-
-            itemAleatorio.zertifiziert = certifyItem();
             document.getElementById("blockNr" + i).innerHTML = itemAleatorio.item.name;
             myimage = "url('" + itemAleatorio.image + "')";
-
             showItemRoleta(myimage, itemAleatorio.colour, i);
             itensRoleta.push(itemAleatorio);
         }
         else {
 
-
-
-
             itemAleatorio = ListaItensTier4[randomItem(ListaItensTier4)];
-
-            itemAleatorio.zertifiziert = certifyItem();
             myimage = "url('" + itemAleatorio.image + "')";
-
             showItemRoleta(myimage, itemAleatorio.colour, i);
             itensRoleta.push(itemAleatorio);
         }
